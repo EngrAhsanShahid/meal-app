@@ -142,9 +142,9 @@ const Navbar = () => {
   };
 
   return (
-    <div className="w-full lg:pl-60 pt-4">
-      <div className="flex flex-wrap items-center justify-between border-gray-300">
-        <div className="flex flex-wrap gap-20 mb-4 lg:mb-0">
+    <div className="">
+      <div className="bg-white z-10 h-24 sticky top-0 flex flex-wrap items-center justify-between border-gray-300">
+        <div className="ml-60 flex flex-wrap gap-20 mb-4 lg:mb-0">
           {['All Meals', 'Week 1', 'Week 2', 'Week 3', 'Week 4'].map(
             (label, index) => (
               <div
@@ -173,7 +173,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="mt-4">
+      <div className="mt-4 w-full lg:pl-60 pt-4">
         {activeTab === 0 && (
           <CardContainer
             selectedCards={selectedCards}
